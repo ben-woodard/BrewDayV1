@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
+import java.util.List;
+
 
 @Entity
 @Data
@@ -24,6 +26,8 @@ public class Brand {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "recipe_id")
     private Recipe recipe;
+    @OneToMany(mappedBy = "brand", orphanRemoval = true, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    private List<Batch> batches;
 
 
 
