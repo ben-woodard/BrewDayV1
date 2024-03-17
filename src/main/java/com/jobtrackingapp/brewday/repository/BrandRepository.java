@@ -1,9 +1,9 @@
 package com.jobtrackingapp.brewday.repository;
 
-import com.jobtrackingapp.brewday.domain.Company;
+import com.jobtrackingapp.brewday.domain.Brand;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CompanyRepository extends JpaRepository<Company, Long> {
+public interface BrandRepository extends JpaRepository<Brand, Long> {
 }

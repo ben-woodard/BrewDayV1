@@ -23,6 +23,7 @@ public class Batch {
     private Integer numberOfTurns;
     private LocalDate startDate;
     private LocalDate endDate;
+    private String tankName;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "brand_id")
     private Brand brand;
