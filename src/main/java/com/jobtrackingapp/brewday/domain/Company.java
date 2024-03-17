@@ -21,6 +21,8 @@ public class Company {
     private String companyName;
     @OneToMany(mappedBy = "company", orphanRemoval = true, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     private List<Brand> brands;
+    private String companyEmail;
+    private String companyPassword;
 
     //    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user", orphanRemoval = true)
 //    @JsonIgnore
