@@ -9,15 +9,15 @@
 <form method="post" action="">
     <div>
         <label>Company Name:</label>
-        <input type="text" th:href="${company.companyName}">
+        <input type="text" th:field="${company.companyName}"/>
     </div>
     <div>
         <label>Company Email:</label>
-        <input type="email" th:href="${company.companyEmail}">
+        <input type="email" th:field="${company.companyEmail}"/>
     </div>
     <div>
         <label>Company Password:</label>
-        <input type="password" th:href="${company.companyPassword}">
+        <input type="password" th:field="${company.companyPassword}"/>
     </div>
     <div>
         <input type="submit" value="Register Company">
