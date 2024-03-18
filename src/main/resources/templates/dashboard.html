@@ -17,7 +17,10 @@
           <a href="">Inventory</a>
         </div>
     </nav>
-
     <h1 th:text="${company.companyName}"></h1>
+    <section>
+        <a method="get" th:href="@{/createbatch/{companyId} (companyId=${company.companyId})}">Add Batch</a>
+<!--        a method="get" th:href="@{/createApplication/{userId} (userId=${user.userId})}">-->
+    </section>
   </body>
 </html>
