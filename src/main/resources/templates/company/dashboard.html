@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>[[${company.companyName}]]Dashboard</title>
-    <link href="../static/css/dashboard.css" rel="stylesheet" />
+    <link href="../../../resources/static/css/dashboard.css" rel="stylesheet" />
   </head>
   <body>
     <nav>
@@ -19,8 +19,7 @@
     </nav>
     <h1 th:text="${company.companyName}"></h1>
     <section>
-        <a method="get" th:href="@{/createbatch/{companyId} (companyId=${company.companyId})}">Add Batch</a>
-<!--        a method="get" th:href="@{/createApplication/{userId} (userId=${user.userId})}">-->
+        <a method="get" th:href="@{/createbatch/{companyId} (companyId=${company.companyId})}">Add Batch To Schedule</a>
     </section>
   </body>
 </html>

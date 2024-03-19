@@ -28,7 +28,7 @@ public class CompanyController {
     @GetMapping("/register")
     public String getRegister (ModelMap model) {
         model.put("company", new Company());
-        return "register";
+        return "company/register";
     }
 
     @PostMapping("/register")
@@ -45,6 +45,6 @@ public class CompanyController {
             return "redirect:/register";
         }
         model.put("company", savedCompany);
-        return "dashboard";
+        return "company/dashboard";
     }
 }
