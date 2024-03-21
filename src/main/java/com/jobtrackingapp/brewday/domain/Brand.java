@@ -23,9 +23,8 @@ public class Brand {
     @ManyToOne
     @JoinColumn(name = "company_id")
     private Company company;
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "recipe_id")
-    private Recipe recipe;
+    @OneToMany(mappedBy = "brand", cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    private List<Recipe> recipes;
     @OneToMany(mappedBy = "brand", orphanRemoval = true, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     private List<Batch> batches;
 

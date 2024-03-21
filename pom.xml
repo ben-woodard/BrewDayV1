@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.jobtrackingapp</groupId>
-    <artifactId>BrewDay</artifactId>
+    <artifactId>BrewDayTest</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>BrewDay</name>
-    <description>BrewDay</description>
+    <name>BrewDayTest</name>
+    <description>BrewDayTest</description>
     <properties>
         <java.version>17</java.version>
     </properties>

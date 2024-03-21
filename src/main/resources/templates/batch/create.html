@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>New Batch!</h1>
-<form>
+<form method="post" action="">
     <div>
         <label>Batch Number:</label>
         <input type="number" th:href="${batch.batchNumber}">
@@ -21,7 +21,7 @@
     </div>
     <div>
         <label>Product Brand:</label>
-        <input type="" th:href="${batch.brand}">
+        <input type="text" th:href="${batch.brand}">
     </div>
     <div>
         <label>Tank/Vessel:</label>
@@ -30,6 +30,9 @@
     <div>
         <label>Number of Turns:</label>
         <input type="number" th:href="${batch.tankName}">
+    </div>
+    <div>
+        <input type="submit" value="Create New Batch">
     </div>
 
 
